@@ -16,6 +16,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Commonwealth Cards",
+  "description": "Sports cards, Pokémon, TCG, and collectibles in Stafford, VA, plus grading submissions with no markup on grading fees.",
   "url": "https://commonwealthcards.com/",
   "telephone": "+15409409107",
   "address": {
@@ -556,6 +557,27 @@
       margin-bottom: 16px;
     }
 
+    .grading-sheet {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    a:has(> .grading-sheet) {
+      display: block;
+    }
+
+    .grading-caption {
+      max-width: 800px;
+      margin: 12px auto 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
 
     footer {
       border-top: 1px solid var(--line);
@@ -1077,6 +1099,7 @@
 
       <nav class="nav-links" id="navLinks">
         <a href="#collections">Collections</a>
+        <a href="#grading">Grading</a>
         <a href="#trade-night">Trade Night</a>
         <a href="#shows">Upcoming Shows</a>
         <a href="#bio">Bio</a>
@@ -1191,9 +1214,28 @@
               Authenticated slabs, premium grades, investment pieces, and
               display-ready cards across sports and TCG.
             </p>
-            <a class="primary-button" href="#contact">Ask About Graded Cards</a>
+            <a class="primary-button" href="#grading">Grading Services & Pricing</a>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="grading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GRADING SUBMISSIONS</p>
+            <h2>Grading Submissions</h2>
+          </div>
+
+          <p>
+            No markup on grading fees. Optional prep services available. We ship to PSA weekly, Beckett twice a month, and SGC & CGC once a month.
+          </p>
+        </div>
+
+        <a href="grading-price-sheet.png" target="_blank" rel="noopener"><img class="grading-sheet" src="grading-price-sheet.jpg" alt="Commonwealth Cards grading price sheet: review packages and PSA, Beckett, SGC, and CGC service levels, pricing, and turnaround times" loading="lazy"></a>
+        <p class="grading-caption">Tap to view full size</p>
+        <a class="primary-button" href="#contact">Ask About Grading</a>
       </div>
     </section>
 
@@ -1434,6 +1476,7 @@
       <div>
         <h4>Explore</h4>
         <a href="#collections">Collections</a>
+        <a href="#grading">Grading</a>
         <a href="#trade-night">Trade Night</a>
         <a href="#shows">Upcoming Shows</a>
       </div>
@@ -1479,6 +1522,14 @@
 
     document.getElementById("currentYear").textContent =
       new Date().getFullYear();
+
+    function redirectLegacyGradingHash() {
+      if (location.hash === "#collections-grading" || location.hash === "#grading-submissions") {
+        location.replace("#grading");
+      }
+    }
+    redirectLegacyGradingHash();
+    window.addEventListener("hashchange", redirectLegacyGradingHash);
   </script>
 </body>
 </html>
