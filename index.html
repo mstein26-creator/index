@@ -5,12 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta
     name="description"
-    content="Common Wealth Cards — sports cards, TCG, Pokémon, graded cards, trade nights, and collectible shows."
+    content="Commonwealth Cards — sports cards, TCG, Pokémon, graded cards, trade nights, and collectible shows."
   />
-  <title>Common Wealth Cards</title>
+  <title>Commonwealth Cards</title>
   <link rel="canonical" href="https://commonwealthcards.com/" />
   <meta property="og:url" content="https://commonwealthcards.com/" />
-  <meta property="og:site_name" content="Common Wealth Cards" />
+  <meta property="og:site_name" content="Commonwealth Cards" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Commonwealth Cards",
+  "url": "https://commonwealthcards.com/",
+  "telephone": "+15409409107",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3619 Richmond Hwy, Ste 125",
+    "addressLocality": "Stafford",
+    "addressRegion": "VA",
+    "postalCode": "22554",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "11:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "11:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": "https://www.instagram.com/common_wealth_cards/"
+}
+  </script>
 
 
   <style>
@@ -902,6 +947,116 @@
       }
     }
 
+
+    .event-details a {
+      color: var(--blue-bright);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .event-details a:hover {
+      color: white;
+    }
+
+    #contact .event-feature::after {
+      content: none;
+    }
+
+    .store-hours {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      max-width: 480px;
+    }
+
+    .store-hours h4 {
+      font-size: 1.15rem;
+      margin-bottom: 14px;
+    }
+
+    .hours-list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+    }
+
+    .hours-list div {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      column-gap: 16px;
+      align-items: baseline;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(8, 124, 255, 0.08);
+      border: 1px solid var(--line);
+    }
+
+    .hours-list dt {
+      min-width: 0;
+      color: var(--silver);
+      font-weight: 800;
+    }
+
+    .hours-list dd {
+      margin: 0;
+      color: var(--blue-bright);
+      font-weight: 800;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .hours-list dd.hours-closed {
+      color: var(--muted);
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .shop-map-wrap {
+      margin-top: 28px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid rgba(72, 153, 255, 0.45);
+      box-shadow:
+        0 0 28px rgba(20, 124, 255, 0.35),
+        0 18px 50px rgba(0, 80, 255, 0.22);
+    }
+
+    .shop-map {
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    @media (max-width: 760px) {
+      .contact-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .store-hours {
+        max-width: none;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .hours-list div {
+        padding: 9px 10px;
+        column-gap: 10px;
+      }
+
+      .hours-list dt,
+      .hours-list dd {
+        font-size: 0.92rem;
+      }
+    }
+
   </style>
 </head>
 
@@ -913,9 +1068,9 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#home">
-        <img src="common-wealth-logo.jpg" alt="Common Wealth Cards logo" />
+        <img src="common-wealth-logo.jpg" alt="Commonwealth Cards logo" />
         <span class="brand-copy">
-          <strong>COMMON WEALTH CARDS</strong>
+          <strong>COMMONWEALTH CARDS</strong>
           <small>Sports • TCG • Collectibles</small>
         </span>
       </a>
@@ -946,7 +1101,7 @@
         <img
           class="hero-logo"
           src="common-wealth-logo.jpg"
-          alt="Common Wealth Cards — Sports, TCG, Collectibles"
+          alt="Commonwealth Cards — Sports, TCG, Collectibles"
         />
 
         <div class="hero-content">
@@ -954,7 +1109,7 @@
 
           <h1>
             Build a collection with
-            <span>Common Wealth.</span>
+            <span>Commonwealth.</span>
           </h1>
 
           <p>
@@ -1003,7 +1158,7 @@
           </div>
 
           <p>
-            Common Wealth Cards focuses on Pokémon, sports cards, graded slabs,
+            Commonwealth Cards focuses on Pokémon, sports cards, graded slabs,
             sealed products, and unique collectibles for new and experienced collectors.
           </p>
         </div>
@@ -1047,7 +1202,7 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">COMMUNITY EVENT</p>
-            <h2>Common Wealth Trade Night</h2>
+            <h2>Commonwealth Cards Trade Night</h2>
           </div>
 
           <p>
@@ -1073,7 +1228,7 @@
               </p>
 
               <div class="event-details">
-                <span>📍 Location: 3619 Richmond Hwy, Suite 125, Stafford, VA 22554 </span>
+                <span>📍 <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Commonwealth+Cards%2C+3619+Richmond+Hwy+Ste+125%2C+Stafford%2C+VA+22554" target="_blank" rel="noopener noreferrer">Location: 3619 Richmond Hwy, Suite 125, Stafford, VA 22554</a></span>
                 <span> Right next to Micropieces</span>
                 <span>📅 Date: Friday, December 18, 2026</span>
                 <span>🕒 Time: 6 - 10pm</span>
@@ -1100,7 +1255,7 @@
             <div class="show-item">
               <div class="show-date">12/18/26</div>
               <div>
-                <h4>Common Wealth Trade Night</h4>
+                <h4>Commonwealth Cards Trade Night</h4>
                 <p>Fri 6 - 10pm • Free pack for the first 24</p>
               </div>
             </div>
@@ -1138,7 +1293,7 @@
         <img
           class="bio-logo"
           src="common-wealth-logo.jpg"
-          alt="Common Wealth Cards logo"
+          alt="Commonwealth Cards logo"
         />
 
         <div class="bio-copy">
@@ -1179,12 +1334,12 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">CONTACT US</p>
-            <h2>Connect With Common Wealth Cards</h2>
+            <h2>Connect With Commonwealth Cards</h2>
           </div>
 
           <p>
             Follow us for trade nights, upcoming shows, new inventory,
-            and Common Wealth Cards announcements.
+            and Commonwealth Cards announcements.
           </p>
         </div>
 
@@ -1192,24 +1347,70 @@
           <div>
             <h3>Visit & Follow Us</h3>
             <p>
-              Stop by the shop, come out to a trade night, or follow us on Instagram to stay connected with Common Wealth Cards.
+              Stop by the shop, come out to a trade night, or follow us on Instagram to stay connected with Commonwealth Cards.
             </p>
 
             <div class="event-details">
               <span>📱 Instagram: @Common_Wealth_Cards</span>
-              <span>📍 Stafford, Virginia</span>
+              <span>📞 <a href="tel:+15409409107">(540) 940-9107</a></span>
+              <span>📍 <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Commonwealth+Cards%2C+3619+Richmond+Hwy+Ste+125%2C+Stafford%2C+VA+22554" target="_blank" rel="noopener noreferrer">3619 Richmond Hwy, Ste 125, Stafford, VA 22554</a></span>
               <span>🏆 Sports • Pokémon • TCG • Collectibles</span>
+            </div>
+
+            <div class="store-hours">
+              <h4>Store Hours</h4>
+              <dl class="hours-list">
+                <div>
+                  <dt>Monday</dt>
+                  <dd class="hours-closed">Closed</dd>
+                </div>
+                <div>
+                  <dt>Tuesday</dt>
+                  <dd>11 AM–4 PM</dd>
+                </div>
+                <div>
+                  <dt>Wednesday–Friday</dt>
+                  <dd>11 AM–8 PM</dd>
+                </div>
+                <div>
+                  <dt>Saturday–Sunday</dt>
+                  <dd>8 AM–5 PM</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
-          <a
-            class="primary-button"
-            href="https://www.instagram.com/common_wealth_cards/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit Our Instagram
-          </a>
+          <div class="contact-actions">
+            <a
+              class="primary-button"
+              href="https://www.instagram.com/common_wealth_cards/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Our Instagram
+            </a>
+            <a class="secondary-button" href="tel:+15409409107">Call Us</a>
+            <a
+              class="secondary-button"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=Commonwealth+Cards%2C+3619+Richmond+Hwy+Ste+125%2C+Stafford%2C+VA+22554"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get Directions
+            </a>
+          </div>
+        </div>
+
+        <div class="shop-map-wrap">
+          <iframe
+            class="shop-map"
+            src="https://www.google.com/maps?q=Commonwealth+Cards,+3619+Richmond+Hwy+Ste+125,+Stafford,+VA+22554&amp;output=embed"
+            width="100%"
+            height="320"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Commonwealth Cards"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -1221,7 +1422,7 @@
         <img
           class="footer-logo"
           src="common-wealth-logo.jpg"
-          alt="Common Wealth Cards"
+          alt="Commonwealth Cards"
         />
 
         <p>
@@ -1238,7 +1439,7 @@
       </div>
 
       <div>
-        <h4>Common Wealth</h4>
+        <h4>Commonwealth Cards</h4>
         <a href="#bio">Bio</a>
         <a href="#contact">Contact</a>
         <a href="#contact">Contact Us</a>
@@ -1247,13 +1448,15 @@
       <div>
         <h4>Contact</h4>
         <p>Instagram: <a href="https://www.instagram.com/common_wealth_cards/" target="_blank" rel="noopener noreferrer">@Common_Wealth_Cards</a></p>
-        <p>3619 Richmond Hwy, Ste 125, Stafford, VA 22554</p>
+        <p>Phone: <a href="tel:+15409409107">(540) 940-9107</a></p>
+        <p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Commonwealth+Cards%2C+3619+Richmond+Hwy+Ste+125%2C+Stafford%2C+VA+22554" target="_blank" rel="noopener noreferrer">3619 Richmond Hwy, Ste 125, Stafford, VA 22554</a></p>
+        <p>Tue 11–4 • Wed–Fri 11–8 • Sat–Sun 8–5 • Mon Closed</p>
         <p>Sports • TCG • Collectibles</p>
       </div>
     </div>
 
     <div class="container copyright">
-      <span>© <span id="currentYear"></span> Common Wealth Cards.</span>
+      <span>© <span id="currentYear"></span> Commonwealth Cards.</span>
       <span>Trade. Collect. Connect.</span>
     </div>
   </footer>
